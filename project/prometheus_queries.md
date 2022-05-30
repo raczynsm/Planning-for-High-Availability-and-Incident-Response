@@ -27,7 +27,7 @@ sum(rate(flask_http_request_total{status=~"2.."}[5m]))
 ### The error budget is 20%
 
 ```
-1-sum(flask_http_request_total{status=~"2.."})/sum(flask_http_request_total)
+1 - (1-(sum(flask_http_request_total{status=~"2.."})/sum(flask_http_request_total))) / 0.2)
 ```
 
 ![img.png](img.png)
