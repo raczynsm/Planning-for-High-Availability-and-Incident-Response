@@ -99,7 +99,9 @@ graph LR;
    - create ec2 module and define all specific per region resources. Application instances will be run on them
    - create eks module and configure cluster managed by AWS. Monitoring tools - Prometheus, Grafana will be deployed on it
    - create modules for primary and secondary database instances 
-3. repeat above steps for region us-west-1
+3. deploy all configured resources to us-east-2 using `Terraform init & apply`
+4. repeat above steps for region us-west-1
+5. deploy all configured resources to us-west-1 using `Terraform init & apply`
 
 ## Steps:
 
